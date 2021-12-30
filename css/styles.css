@@ -13,8 +13,8 @@ html {
 }
 
 .content {
-	margin-right: 2em;
-	margin-left: 2em;
+	margin-right: 6em;
+	margin-left: 6em;
 	margin-top: 1em;
 	background-color: white;
 	padding-top: 1em;
@@ -60,7 +60,7 @@ h2, .header_line {
 	font-size: 1.2em;
 }
 
-.navigation {
+#nav_menu {
 	background-color: #303030;
 	/*padding-top: 0.5em;
 	padding-bottom: 0.5em;*/
@@ -75,50 +75,32 @@ h2, .header_line {
 	padding: 0;
 	margin: 0;
 }
-.navigation li {
+#nav_menu li {
 	float: left;
-	width: 8em;
 	color: white;
 }
-.navigation li a {
+#nav_menu li a {
 	color: white;
 	display: block;
 	padding-top: 0.3em;
 	padding-bottom: 0.3em;
+	padding-left: 1em;
+	padding-right: 1em;
 	text-decoration: none;
 }
 
-.navigation a:hover {
+#nav_menu a:hover {
 	background-color: black;
 	color: white;
 	text-decoration: none;
 }
 
-.active {
-	background-color: #6c00c4;
-	color: white;
-}
-
-#debian_logo {
-	display: block;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	float: left;
-	margin-right: auto;
-}
-
-#gnome_logo {
-	display: block;
-	float: left;
-}
 #copyright {
 	text-align: center;
 	clear: left;
 }
 #links {
-	margin-left: 4em;
+	margin-left: 6em;
 }
 
 .caption {
@@ -133,4 +115,33 @@ h2, .header_line {
 .icon-link:hover {
 	background-color: white;
 	border-radius: 50%;
+}
+
+/* tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) {
+	h1 {
+		font-size: 135%;
+	}
+
+}
+
+/* mobile portrait layout (479px or less) */
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 90%;
+	}
+
+	h1 {
+		/* My website title indent */
+		padding-left: 1em;
+	}
+
+	.content {
+		margin-right: 2em;
+		margin-left: 2em;
+	}
+
+	#links {
+		margin-left: 2em;
+	}
 }
