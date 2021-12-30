@@ -48,7 +48,7 @@ footer {
 
 h1 {
 	/* My website title indent */
-	padding-left: 1em;
+	padding-left: 2em;
 }
 
 h2, .header_line {
@@ -98,23 +98,6 @@ h2, .header_line {
 #copyright {
 	text-align: center;
 	clear: left;
-}
-#links {
-	margin-left: 6em;
-}
-
-.caption {
-	padding-bottom: 30px;
-}
-
-.icon-link {
-	float: left;
-	margin-left: 0.3em;
-}
-
-.icon-link:hover {
-	background-color: white;
-	border-radius: 50%;
 }
 
 /* tablet portrait layout (768px to 959px) */
